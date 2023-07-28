@@ -1,0 +1,24 @@
+CREATE TABLE paints (id INTEGER PRIMARY KEY, medium TEXT, brand TEXT, aisle INTEGER, price INTEGER, color TEXT);
+
+INSERT INTO Paints VALUES ( 1, "Oil", "Winsor & Newton", 3, 13, "yellow");
+INSERT INTO Paints VALUES ( 2, "Arycilic", "Winsor & Newton", 3, 5,"yellow" );
+INSERT INTO Paints VALUES ( 3, "Watercolor", "Winsor & Newton", 3, 13, "green");
+INSERT INTO Paints VALUES ( 4, "Gouche", "Winsor & Newton", 3, 11, "red");
+INSERT INTO Paints VALUES ( 5, "Oil", "Winsor & Newton", 3, 13, "yellow");
+INSERT INTO Paints VALUES ( 6, "Oil", "Winsor & Newton", 3, 13, "red");
+INSERT INTO Paints VALUES ( 7, "Arycilic", "Winsor & Newton", 3, 5, "red");
+INSERT INTO Paints VALUES ( 8, "Watercolor", "Winsor & Newton", 3, 13, "green" );
+INSERT INTO Paints VALUES ( 9, "Gouche", "Winsor & Newton", 3, 10, "yellow");
+INSERT INTO Paints VALUES ( 10, "Oil", "Winsor & Newton", 3, 17, "yellow");
+INSERT INTO Paints VALUES ( 11, "Watercolor", "Winsor & Newton", 3, 13, "red");
+INSERT INTO Paints VALUES ( 12, "Oil", "Winsor & Newton", 3, 18, "yellow");
+INSERT INTO Paints VALUES ( 13, "Arycilic", "Winsor & Newton", 3, 8, "green");
+INSERT INTO Paints VALUES ( 14, "Oil", "Winsor & Newton", 3, 13, "green");
+INSERT INTO Paints VALUES ( 15, "Gouche", "Winsor & Newton", 3, 13, "red");
+
+--dispalys the database orederd by color 
+SELECT * From paints Order by color; 
+
+-- what is the total for the paint?
+Select SUM(Price) from paints
+
